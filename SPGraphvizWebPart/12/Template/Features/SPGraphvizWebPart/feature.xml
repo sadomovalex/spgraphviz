@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="C8D6B76B-5905-4509-873C-D3917E87C759"
+         Title="$Resources:SPGraphvizWebPart,Feature_SPGraphvizWebPart_Title;"
+         Description="$Resources:SPGraphvizWebPart,Feature_SPGraphvizWebPart_Description;"
+         Version="1.0.0.0"
+         Hidden="FALSE"
+         Scope="Site"
+         xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <ElementManifests>
+    <ElementManifest Location="elements.xml"/>
+    <ElementFile Location="SPGraphvizWebPart.webpart" />
+  </ElementManifests>
+
+</Feature>

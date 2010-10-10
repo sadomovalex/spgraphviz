@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  
+  <Module Name="SPGraphvizWebPart" Url="_catalogs/wp" RootWebOnly="TRUE">
+    <File Url="SPGraphvizWebPart.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="Graphviz"></Property>
+      <Property Name="QuickAddGroups" Value="Graphviz" />
+    </File>
+  </Module>
+
+</Elements>
