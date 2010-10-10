@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="SPGraphvizWebPart.SPGraphvizWebPart, SPGraphvizWebPart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9e1625e7a28b1e03" />
+      <importErrorMessage>$Resources:SPGraphvizWebPart,Feature_SPGraphvizWebPart_ImportError;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">$Resources:SPGraphvizWebPart,WebPart_Title;</property>
+        <property name="Description" type="string">$Resources:SPGraphvizWebPart,WebPart_Description;</property>
+        <property name="ChromeType" type="chrometype">Default</property>
+        <property name="ChromeState" type="chromestate">Normal</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>
