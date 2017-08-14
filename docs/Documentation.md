@@ -5,11 +5,11 @@
 - Download and install [Graphviz](http://www.graphviz.org) library (choose Download > Windows > Stable and development Windows Install packages) on web server. During download ensure that you checked "Everyone" on first wizard step
 - Download latest release of SPGraphviz. Currently release contains regular wsp package
 - Install SPGraphvizWebPart.wsp on your server. Here are steps for single-WFE environment:
-{{ 
+```
 stsadm -o addsolution -filename SPGraphvizWebPart.wsp
 stsadm -o deploysolution -local -allowgac -allcontenturls -name SPGraphvizWebPart.wsp
 stsadm -o activatefeature -name SPGraphvizWebPart -url http://example.com
-}}
+```
 Where instead of http://example.com should be URL of your site collection. Now you should be able to add SPGraphvizWebPart on your publishing pages (it is located under Graphviz group)
 
 ## General
@@ -22,6 +22,7 @@ WinGraphviz is implemented as COM component so it requires additional installati
 
 ## SPGraphvizWebPart
 SPGraphvizWebPart is a regular Sharepoint web part which allows you to visualize graphs. There are several custom properties (located under "Custom settings" category in web part properties editor):
+
 ![](Documentation_properties.png)
 
 * Dot file URL
