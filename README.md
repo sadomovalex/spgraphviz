@@ -4,7 +4,7 @@ Project was moved from Codeplex as last one will be shut down in Dec 2017.
 ## Project Description
 SPGraphviz - create your own visualization graphs without programming in Sharepoint. Just define graph on DOT language in simple text file, upload it into document library and specify URL in SPGraphvizWebPart - it will make graphical representation of your graph
 
-![](Home_graphviz.png)
+![](https://github.com/sadomovalex/spgraphviz/blob/master/docs/Home_graphviz.png)
 
 ## Usage
 * Define graph using the [DOT language](http://www.graphviz.org/pdf/dotguide.pdf) in simple .txt file. E.g. the graph shown at the beginning of this page is defiend using the following file:
@@ -27,11 +27,11 @@ As you see it is quite straightforward: you define digraph and relationships bet
 * Upload created .txt file with graph definition into document library in your site collection
 
 * Specify absolute URL of uploaded file in web part properties (Custom Properties > Dot file URL):
-![](Home_properties.png)
+![](https://github.com/sadomovalex/spgraphviz/blob/master/docs/Home_properties.png)
 (in our example I specified the following URL in "Dot file URL" property: http://example.com/Documents/test.txt)
 
 * Click Apply. Graphical representation of the graph will be shown on the publishing page:
-![](Home_webpart.png)
+![](https://github.com/sadomovalex/spgraphviz/blob/master/docs/Home_webpart.png)
 
 ## Additional resources
 * Author's blog: [http://sadomovalex.blogspot.com](http://sadomovalex.blogspot.com)
