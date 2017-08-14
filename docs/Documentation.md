@@ -2,9 +2,9 @@
 * [Graphviz](http://www.graphviz.org) should be installed on web server with Sharepoint. If you use multiple WFEs, Graphviz library should installed on all of them
 
 ## Installation
-# Download and install [Graphviz](http://www.graphviz.org) library (choose Download > Windows > Stable and development Windows Install packages) on web server. During download ensure that you checked "Everyone" on first wizard step
-# Download latest release of SPGraphviz. Currently release contains regular wsp package
-# Install SPGraphvizWebPart.wsp on your server. Here are steps for single-WFE environment:
+- Download and install [Graphviz](http://www.graphviz.org) library (choose Download > Windows > Stable and development Windows Install packages) on web server. During download ensure that you checked "Everyone" on first wizard step
+- Download latest release of SPGraphviz. Currently release contains regular wsp package
+- Install SPGraphvizWebPart.wsp on your server. Here are steps for single-WFE environment:
 {{ 
 stsadm -o addsolution -filename SPGraphvizWebPart.wsp
 stsadm -o deploysolution -local -allowgac -allcontenturls -name SPGraphvizWebPart.wsp
@@ -36,12 +36,12 @@ Contains absolute URL of a file with graph definition on DOT language. It is sim
 IMPORTANT NOTE: because of security reasons by default you can specify URL to the file which located only on the same host where web part is installed. E.g. if you installed SPGraphvizWebPart on http://example.com or http://example.com/SubSiteColl - then by default SPGraphvizWebPart allows you to visualize text files from example.com host. It was made intentionally because graph rendering is performed in native code and it requires system resources. So malicious users can specify URL of the big file which located on external site - and it will force rendering to occupy a lot of system resources causing DoS.
 
 But there is possibility to manually specify external hosts which are considered as trusted locations. In order to do it you need to add additional parameter "GraphvizAllowedHosts" in <appSettings> section in web.config of your web application. Then add trusted hosts delimited by semicolumn:
-{{
+```xml
 <appSettings>
   ...
   <add key="GraphvizAllowedHosts" value="contoso.com;microsoft.com" />
 </appSettings>
-}}
+```
 Remember that you should add hosts to "GraphvizAllowedHosts" only if you 100% trust this location.
 
 **Image type**
