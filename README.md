@@ -35,6 +35,6 @@ As you see it is quite straightforward: you define digraph and relationships bet
 
 ## Additional resources
 * Author's blog: [http://sadomovalex.blogspot.com](http://sadomovalex.blogspot.com)
-* For more details about SPGraphvizWebPart's features and installation instructions please check [Documentation](https://github.com/sadomovalex/spgraphviz/blob/master/docs/Documentation.md)
+* For more details about SPGraphvizWebPart's features and installation instructions: [Documentation](https://github.com/sadomovalex/spgraphviz/blob/master/docs/Documentation.md)
 * DOT language reference: [http://www.graphviz.org/pdf/dotguide.pdf](http://www.graphviz.org/pdf/dotguide.pdf)
 * Graphviz gallery: [http://www.graphviz.org/Gallery.php](http://www.graphviz.org/Gallery.php)
